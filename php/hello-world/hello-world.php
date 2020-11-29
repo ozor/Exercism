@@ -1,13 +1,11 @@
 <?php
 
-//
-// This is only a SKELETON file for the "Hello World" exercise.
-// It's been provided as a convenience to get you started writing code faster.
-//
-
+/**
+ * Returns the 'Hello, World!' message
+ *
+ * @return string
+ */
 function helloWorld()
 {
-    //
-    // YOUR CODE GOES HERE
-    //
+    return 'Hello, World!';
 }
