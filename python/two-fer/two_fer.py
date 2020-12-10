@@ -1,4 +1,2 @@
-def two_fer(name = ''):
-    if (name == '') :
-        name = 'you'
-    return 'One for %s, one for me.' % name
+def two_fer(name = 'you'):
+    return f"One for {name}, one for me."
