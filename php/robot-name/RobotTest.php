@@ -17,7 +17,7 @@ class RobotTest extends PHPUnit\Framework\TestCase
 
     public function testHasName() : void
     {
-        $this->assertRegExp('/^[a-z]{2}\d{3}$/i', $this->robot->getName());
+        $this->assertMatchesRegularExpression('/^[a-z]{2}\d{3}$/i', $this->robot->getName());
     }
 
     public function testNameSticks() : void
@@ -36,7 +36,7 @@ class RobotTest extends PHPUnit\Framework\TestCase
         unset($other_bot);
     }
 
-    public function testresetName() : void
+    public function testResetName() : void
     {
         $name1 = $this->robot->getName();
 
@@ -46,7 +46,7 @@ class RobotTest extends PHPUnit\Framework\TestCase
 
         $this->assertNotSame($name1, $name2);
 
-        $this->assertRegExp('/\w{2}\d{3}/', $name2);
+        $this->assertMatchesRegularExpression('/\w{2}\d{3}/', $name2);
     }
 
     public function testNameArentRecycled() : void
