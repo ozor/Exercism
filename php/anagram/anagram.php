@@ -9,12 +9,12 @@ function detectAnagrams(string $pattern, array $words): array
     sort($patternArray, SORT_LOCALE_STRING);
 
     foreach ($words as $word) {
-        $_word = mb_strtolower($word);
-        if ($_word == $pattern || strlen($word) != strlen($pattern)) {
+        $loweredWord = mb_strtolower($word);
+        if ($loweredWord == $pattern || strlen($loweredWord) != strlen($pattern)) {
             continue;
         }
 
-        $wordArray = mb_str_split($_word);
+        $wordArray = mb_str_split($loweredWord);
         sort($wordArray, SORT_LOCALE_STRING);
 
         $count = 0;
