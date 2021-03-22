@@ -1,11 +1,5 @@
 
-export const colorCode = (colorName) => {
-  for (let item in COLORS) {
-    if (COLORS[item] === colorName) {
-      return parseInt(item)
-    }
-  }
-};
+export const colorCode = (colorName) => COLORS.indexOf(colorName);
 
 export const COLORS = [
   'black',
