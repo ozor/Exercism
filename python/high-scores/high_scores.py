@@ -13,7 +13,7 @@ def personal_top_three(scores):
 
     result = []
     while len(result) < 3:
-        index = list.index(scores, max(scores))
+        index = scores.index(max(scores))
         result.append(scores.pop(index))
 
     return sorted(result, reverse=True)
