@@ -23,6 +23,7 @@ class SieveTest extends PHPUnit\Framework\TestCase
     {
         $this->assertEquals([2, 3, 5, 7, 11, 13], sieve(13));
     }
+    /*
     public function testFindPrimesUpTo1000() : void
     {
         $this->assertEquals(
@@ -199,4 +200,5 @@ class SieveTest extends PHPUnit\Framework\TestCase
             sieve(1000)
         );
     }
+    */
 }
