@@ -3,12 +3,12 @@
 main () {
   if (( $# >= 1 ))
   then
-    NAME=$1
+    name=$1
   else
-    NAME="you"
+    name="you"
   fi
 
-  printf "One for %s, one for me." "$NAME"
+  printf "One for %s, one for me." "$name"
 }
 
 main "$@"
