@@ -3,7 +3,7 @@
 main () {
   if (( $# >= 1 ))
   then
-    [[ $1 == '' ]] && name="you" || name=$1
+    name=$1
   else
     name="you"
   fi
